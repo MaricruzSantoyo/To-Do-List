@@ -8,6 +8,7 @@ body {
     background-color: greenyellow ;
     color:blueviolet; 
     font-family:cursive; 
+    text-align: center;
 }
 
 ul li {
@@ -19,4 +20,5 @@ div button i {
 }
 h1{
     font-size: 5rem;
+    text-align: center;
 }
