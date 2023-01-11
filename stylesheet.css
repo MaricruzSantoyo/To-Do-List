@@ -49,7 +49,7 @@ h1 {
     transform: translateX(10rem);
     opacity: 0;
 }
-.submit {
+.submit, select {
     display: inline-flex;
     height: 40px;
     width: 80px;
