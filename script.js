@@ -34,7 +34,7 @@ function addTodo(event) {
     //Adding the delete button
     const deleteButton = document.createElement("button");
     deleteButton.innerHTML = '<i class="fas fa-trash"></li>';
-    deletehButton.classList.add("trash-btn");
+    deleteButton.classList.add("trash-btn");
     todoDiv.appendChild(deleteButton);
 
     //Appending todoDiv to ul
@@ -53,7 +53,7 @@ function deleteCheck(e) {
         todo.classList.add("slide");
 
         removeLocalTodos(todo);
-        todo.addEventListener("transitionend", function () {
+        todo.addEventListener("transitionend", function() {
             todo.remove();
         });
     }
@@ -76,7 +76,7 @@ function filterTodo(e) {
                 break;
             case "completed":
                 //checks if its completed and if so, shows them.
-                if (todo.classList.contains("completed")) {
+                if(todo.classList.contains("completed")) {
                     todo.style.display = "flex";
                 } else {
                     todo.style.display = "none";
@@ -84,7 +84,7 @@ function filterTodo(e) {
                 break;
                 //checks if its incomplete and if so, shows them.
             case "incomplete":
-                if (!todo.classList.contains("completed")) {
+                if(!todo.classList.contains("completed")) {
                     todo.style.display = "flex";
                 } else {
                     todo.style.display = "none";
@@ -99,7 +99,7 @@ function saveLocalTodos(todo) {
     //checks if there's things in there already,
     // if not it creates an empty array.
     let todos;
-    if (localStorage.getItem("todos") === null) {
+    if(localStorage.getItem("todos") === null) {
         todos = [];
     } else {
         todos = JSON.parse(localStorage.getItem("todos"));
@@ -112,7 +112,7 @@ function saveLocalTodos(todo) {
 //and looping through them.
 function getLocalTodos() {
     let todos;
-    if (localStorage.getItem("todos") === null) {
+    if(localStorage.getItem("todos") === null) {
         todos = [];
     } else {
         todos = JSON.parse(localStorage.getItem("todos"));
@@ -142,7 +142,7 @@ function getLocalTodos() {
 //removes the todos from the local storage
 function removeLocalTodos(todo) {
     let todos;
-    if (localStorage.getItem("todos") === null) {
+    if(localStorage.getItem("todos") === null) {
         todos = [];
     } else {
         todos = JSON.parse(localStorage.getItem("todos"));
