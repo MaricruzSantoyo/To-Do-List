@@ -33,7 +33,7 @@ h1 {
 
 .fa-trash,
 .fa-check-circle {
-    cursor: pointer;
+    pointer-events: none;
 }
 
 .completed {
