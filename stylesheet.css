@@ -49,3 +49,23 @@ h1 {
     transform: translateX(10rem);
     opacity: 0;
 }
+.submit {
+    display: inline-flex;
+    height: 40px;
+    width: 80px;
+    border: 2px solid purple;
+    margin: 20px 20px 20px 20px;
+    color: pink;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all .35s ease-Out;
+    width: 20%;
+    height: 20%;
+    background: brown;
+    transition: all .30s ease-Out;
+    bottom: 0;
+    border-radius: 12px;
+  }; 
